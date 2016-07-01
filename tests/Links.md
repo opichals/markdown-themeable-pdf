@@ -15,11 +15,11 @@ Markdown links
 
 -	[x] [External](https://github.com/cakebake/markdown-themeable-pdf/)
 -	[ ] [File](file:///home/jens/.atom/packages/markdown-themeable-pdf/tests/Demo.pdf)
--	[ ] [Anchor](#markdown-links)
+-	[x] [Anchor](#markdown-links)
 
 HTML links
 ----------
 
 -	[x] <a href="https://github.com/cakebake/markdown-themeable-pdf/">External</a>
 -	[x] <a href="file:///home/jens/.atom/packages/markdown-themeable-pdf/tests/Demo.pdf">File</a>
--	[ ] <a href="#html-links">Anchor</a>
+-	[x] <a href="#html-links">Anchor</a>
