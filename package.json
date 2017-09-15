@@ -17,6 +17,8 @@
   },
   "dependencies": {
     "atom": "file:./fake-atom",
+    "yargs": "^8.0.2",
+
     "cheerio": "^0.20.0",
     "highlight.js": "^9.4.0",
     "html-pdf": "^2.0.1",

@@ -33,6 +33,11 @@ Exporting a markdown file is as follows
 
     node ./cli.js ./path/to/torender.md
 
+For further details on usage use the -h argument
+
+    node ./cli.js -h
+
+
 #### Page breaks
 
 You can start any time a new PDF page with typing Snippet/Shortcode `page-break` in your markdown editor. So you can prevent such ugly breaks in lists or other contiguous areas.
