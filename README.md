@@ -22,6 +22,17 @@ The PDF can be generated in various ways:
 -	Right-click on a markdown file in Tree-View and select `Markdown to PDF` **or**
 -	Press `ctrl-shift-E` (E = Export) in the editor area when a file is opened
 
+### CLI (ALPHA)
+
+The whole markdown-themeable-pdf.git repo can be installed as a regular npm package without any Atom editor install
+just by cloning the repository and issuing npm install
+
+    npm install
+
+Exporting a markdown file is as follows
+
+    node ./cli.js ./path/to/torender.md
+
 #### Page breaks
 
 You can start any time a new PDF page with typing Snippet/Shortcode `page-break` in your markdown editor. So you can prevent such ugly breaks in lists or other contiguous areas.
