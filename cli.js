@@ -6,6 +6,7 @@ mpdf.config.enableCustomHeader.default = false;
 mpdf.config.enableCustomFooter.default = false;
 mpdf.config.codeHighlightingTheme.default = "idea.css";
 mpdf.config.openPdfInAtomWorkspace.default = false;
+global.atom.config.configDirPath = "./";
 
 let yargs = require('yargs')
     .usage('Usage: $0 [options] <file.md>')
