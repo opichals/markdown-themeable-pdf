@@ -2,8 +2,8 @@
 
 // copy the fake atom npm module
 {
-    let fs = require('fs');
-    let path = require('path');
+    var fs = require('fs');
+    var path = require('path');
     var __node_modules = path.resolve(__dirname, "./node_modules");
     try {
        if (!fs.statSync(__node_modules).isDirectory()) {
@@ -25,7 +25,7 @@ mpdf.config.codeHighlightingTheme.default = "idea.css";
 mpdf.config.openPdfInAtomWorkspace.default = false;
 global.atom.config.configDirPath = "./";
 
-let yargs = require('yargs')
+var yargs = require('yargs')
     .usage('Usage: $0 [options] <file.md>')
     .help('h')
     .option('show-cfg', {
@@ -34,7 +34,7 @@ let yargs = require('yargs')
     });
 Object.keys(mpdf.config).forEach((name) => yargs.option(name, mpdf.config[name]));
 
-let argv = yargs.argv;
+var argv = yargs.argv;
 
 atom.use("markdown-themeable-pdf", mpdf, argv);
 

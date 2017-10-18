@@ -27,7 +27,7 @@ module.exports.notifications = {
     }
 };
 
-let usedPackage;
+var usedPackage;
 
 module.exports.use = function(name, pkg, config) {
     usedPackage = pkg;
@@ -38,8 +38,8 @@ module.exports.use = function(name, pkg, config) {
 module.exports.config = {
     get: function(key) {
         key = key.replace(usedPackage.__name+".", "");
-        let entry = usedPackage.config[key];
-        let value = usedPackage.__config[key];
+        var entry = usedPackage.config[key];
+        var value = usedPackage.__config[key];
         value = value !== undefined ? value : entry && entry.default;
         // console.log('cfg: '+ key + "=" + value);
         return value;
