@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 global.atom = require('atom');
 mpdf = require('./lib/markdown-themeable-pdf.js');
 

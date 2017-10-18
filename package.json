@@ -1,7 +1,7 @@
 {
   "name": "markdown-themeable-pdf",
   "main": "./lib/markdown-themeable-pdf",
-  "version": "1.2.0",
+  "version": "1.2.0-cli1",
   "description": "Themeable markdown converter (Print to PDF, HTML, JPEG or PNG)",
   "keywords": [
     "markdown",
@@ -14,6 +14,9 @@
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
+  },
+  "bin": {
+     "md2pdf": "./cli.js"
   },
   "dependencies": {
     "atom": "file:./fake-atom",
