@@ -1,5 +1,20 @@
 #!/usr/bin/env node
 
+// copy the fake atom npm module
+{
+    let fs = require('fs');
+    let path = require('path');
+    var __node_modules = path.resolve(__dirname, "./node_modules");
+    try {
+       if (!fs.statSync(__node_modules).isDirectory()) {
+          throw new Error('no local node_modules');
+       }
+    } catch(e) {
+        __node_modules = path.resolve(__dirname, "../../node_modules");
+    }
+    require('fs-extra').copySync(__dirname + '/fake-atom', __node_modules + '/atom');
+}
+
 global.atom = require('atom');
 mpdf = require('./lib/markdown-themeable-pdf.js');
 

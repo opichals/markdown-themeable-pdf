@@ -16,10 +16,10 @@
     "atom": ">=0.174.0 <2.0.0"
   },
   "bin": {
-     "md2pdf": "./cli.js"
+    "md2pdf": "./cli.js"
   },
   "dependencies": {
-    "atom": "file:./fake-atom",
+    "fs-extra": "^4.0.2",
     "yargs": "^8.0.2",
 
     "cheerio": "^0.20.0",
